@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'SDWebImage'
-  s.version  = '0.1'
+  s.version  = '0.2'
   s.platform = :ios
   s.license  = 'MIT'
   s.summary  = 'Asynchronous image downloader with cache support with an UIImageView category.'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
                    'several times, a guarantee that bogus URLs won\'t be retried again and again, ' \
                    'and performances!'
 
-  s.preferred_dependency = 'Main' 
+  s.default_subspec = 'Main' 
 
   s.subspec 'Main' do |sp|
     sp.source_files = 'SDWebImage/{SD,UI}*.{h,m}'
